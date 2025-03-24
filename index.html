@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width,initial-scale=1.0">
+        <title>YB-Services</title>
+
+
+        <style>
+            input{
+                width:300px;
+                height:30px;
+                border-radius:5px;
+            }
+            button{
+                background-color:green;
+                border-radius:10px;
+                width:200px;
+                height:40px;
+                font:bold;
+                color:white;
+                cursor:pointer;
+            }
+            h2{
+                color:rgb(182, 17, 17);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body style="background-color: turquoise;">
+        <h1 align = "center"><strong>Welcome To Our YB-Services</strong></h1>  <!--important text ko strong use kare -->
+<br><br><br><br>
+<div style="text-align: center;">
+    <h2>Registration Form</h2>
+    <form action="submit.php" method ="post">
+        <label for="name"><h3>Enter your Username: </h3></label>
+        <input type="text" name="name" id="name" required><br>
+        <label for ="email"><h3>Enter your Email: </h3></label>
+        <input type ="email" name="email" id="email" required><br>
+        <label for="phone"><h3>Enter your Mobile Number:</h3> </label>
+        <input type="tel" name="phone" id ="phone" required pattern="[0-9]{10}"><br>
+        <label for="password"><h3>Enter your Password:</h3> </label>
+        <input type="password" name ="password" id="password" required><br>
+       
+        <label for="password"><h3>Confirm your Password:</h3> </label>
+        <input type="password" name="cpassword" id="cpassword" required><br><br>
+        
+        <button>Submit</button>
+
+
+    </form>
+</div>
+
+    </body>
+</html>
